@@ -1,29 +1,20 @@
-# Autonomous SRE Incident Response Agent 🛠️🤖
+# 🛡️ Autonomous SRE Incident Response Console & Cyber Operations Center
 
-An intelligent Site Reliability Engineering (SRE) assistant designed to ingest real-time server error logs, fetch historical post-mortem runbooks via persistent memory, and output actionable step-by-step resolution commands using Google Gemini 2.5 Flash.
+> **Vector Memory-Augmented Operational Intelligence & Responsible AI Guardrails for Next-Gen Infrastructure**
 
----
-
-## 🌟 Key Features
-
-* **Persistent Vector Memory:** Integrated with **Hindsight Vector Memory** to retain past post-mortem runbooks and system fixes.
-* **Context-Aware AI Diagnosis:** Uses **Google Gemini 2.5 Flash** to analyze incoming server errors against recalled historical incidents.
-* **Interactive Control Dashboard:** Built with a Python-native **Gradio UI** containing a live memory ON/OFF toggle switch to benchmark stateless vs. memory-augmented AI responses.
-* **Runbook Retention Workflow:** Features an "Approve & Retain Fix" module that lets SREs write verified fixes back into Hindsight vector storage directly from the interface.
+[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Framework](https://img.shields.io/badge/Gradio-6.0%2B-orange.svg)](https://gradio.app/)
+[![Powered by Hindsight](https://img.shields.io/badge/Vector%20Memory-Hindsight-purple.svg)](https://api.hindsight.vectorize.io)
+[![AI Engine](https://img.shields.io/badge/AI-Google%20Gemini%202.5%20Flash-green.svg)](https://ai.google.dev/)
 
 ---
 
-## 🏗️ Architecture
+## 🚀 Overview
+Modern cloud infrastructure generates thousands of unstructured server error logs per minute, resulting in alert fatigue, prolonged Mean Time To Resolution (MTTR), and dangerous human intervention errors. 
 
-1. **Ingestion Layer:** Raw server log string passed via Gradio frontend UI.
-2. **Memory Recall:** Hindsight API queries past vector embeddings stored under the `incident-logs-bank` memory namespace.
-3. **LLM Diagnostics:** Google Gemini generates root cause diagnosis and exact CLI remediation steps leveraging recalled runbooks.
-4. **Memory Retention:** Newly verified fixes are stored permanently to continuously improve system intelligence.
+The **Autonomous SRE Incident Response Console** is an enterprise-grade cyber operations center that bridges automated diagnostics, multi-lingual operational handoffs, and persistent vector memory via **[Hindsight](https://api.hindsight.vectorize.io)**. By combining Google Gemini 2.5 Flash with real-time vector recall, the agent instantly surfaces historical post-mortems, maps blast radiuses, and enforces strict Responsible AI guardrails before proposing executable CLI commands.
 
 ---
 
-## ⚡ Setup & Execution
+## 📐 System Architecture & Workflow
 
-### 1. Install Dependencies
-```bash
-pip install hindsight-client google-genai gradio
