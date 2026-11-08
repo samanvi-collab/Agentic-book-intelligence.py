@@ -1,0 +1,8 @@
+hindsight-client
+google-genai
+gradio
+fastapi
+uvicorn
+pydantic
+python-dotenv
+aiohttp
